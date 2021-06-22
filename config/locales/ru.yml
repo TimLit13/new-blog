@@ -12,6 +12,7 @@ ru:
     article: 'Статья'
     article_summary: 'Краткое содержание'
     article_body: 'Текс статьи'
+    article_img: 'Изображение'
   posts:
     new:
       title: 'Новая статья'
