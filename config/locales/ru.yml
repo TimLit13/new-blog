@@ -16,3 +16,7 @@ ru:
   posts:
     new:
       title: 'Новая статья'
+  tags:
+    show:
+      no_articles: 'Статей нет'
+      all_articles_with_tag: 'Все статьи с тэгом: '

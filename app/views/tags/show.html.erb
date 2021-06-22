@@ -1,0 +1,7 @@
+<h1 class= "text-center"><%= t('tags.show.all_articles_with_tag')%><%= @tag.name %></h1>
+
+<% if @tag.posts.empty? %>
+	<h2><%= t(tags.show.no_articles) %></h2>
+<% else %>
+	<%= render @tag.posts%>
+<% end %>
