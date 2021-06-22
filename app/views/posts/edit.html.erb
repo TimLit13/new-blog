@@ -20,16 +20,24 @@
 					<%= f.text_field :title, class: 'form-control'%>
 				</div>
 				<br>
+
 				<div class = "form-group">
 					<%= f.label :summary %>
 					<%= f.text_area :summary, class: 'form-control'%>
 				</div>
 				<br>
+
 				<div class = "form-group">
 					<%= f.label :body %>
 					<%= f.text_area :body, class: 'form-control' %>
 				</div>
 				<br>
+
+				<div class = "form-group">
+					<%= f.file_field :image %>
+				</div>
+				<br>
+
 				<div class = "form-group">
 					<%= f.submit t('common.apply'), class: 'btn btn-outline-success' %>
 					<%= link_to t('common.back'), :back, class: 'btn btn-outline-secondary'  %>

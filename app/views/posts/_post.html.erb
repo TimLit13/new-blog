@@ -9,6 +9,7 @@
 				    <p><%= link_to post.title, post_path(post) %></p>
 				  </blockquote>
 				  <figcaption class="blockquote-footer">
+				    <div><%= image_tag post.image.url(:thumb), class: 'img-thumbnail thumb' if post.image?%></div>
 				    <%= post.summary%>,
 				    <br>  
 				    <cite title="Source Title"><%= t('common.created_at') %> <%= post.created_at.to_date.strftime("%d %B %Y")%></cite>

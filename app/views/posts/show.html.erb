@@ -23,6 +23,16 @@
 			 	 <dd class="col-sm-9">
 			    	<p><%= @post.body %></p>
 			  	</dd>
+
+
+			  	<dt class="col-sm-3">
+			 	 	<%= t('common.article_img') %>
+			 	 </dt>
+			 	 <dd class="col-sm-9">
+			    	<%= image_tag @post.image.url(:large), class: 'img-show' if @post.image?%>
+			  	</dd>
+
+
 			</dl>
 			<div class= "text-center"> 
 				<%= render 'form_update_delete'%>
