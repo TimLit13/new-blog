@@ -4,21 +4,21 @@
 		<div class="col-8 article">
 			<dl class="row">
 				<dt class="col-sm-3">
-					<h3>Статья</h3>
+					<h3><%= t('common.article') %></h3>
 				</dt>
 			  	<dd class="col-sm-9">
 			  		<h3><%= @post.title %></h3>	
 			  	</dd>
 
 			 	<dt class="col-sm-3">
-			 		Краткое описание
+			 		<%= t('common.article_summary') %>
 			 	</dt>
 			 	<dd class="col-sm-9">
 			    	<p><%= @post.summary %></p>
 			  	</dd>
 
 			 	 <dt class="col-sm-3">
-			 	 	Содержание
+			 	 	<%= t('common.article_body') %>
 			 	 </dt>
 			 	 <dd class="col-sm-9">
 			    	<p><%= @post.body %></p>

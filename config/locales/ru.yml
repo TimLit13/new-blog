@@ -1,0 +1,17 @@
+ru:
+  common:
+    errors: 'При заполнении возникли ошибки:'
+    back: 'Назад'
+    apply: 'Подтвердить'
+    update: 'Изменить'
+    delete: 'Удалить'
+    delete-confirm: 'Вы уверены, что хотите удалить статью'
+    created_at: 'создана'
+    article_edit: 'Редактирование статьи: '
+    articles: 'Статьи'
+    article: 'Статья'
+    article_summary: 'Краткое содержание'
+    article_body: 'Текс статьи'
+  posts:
+    new:
+      title: 'Новая статья'

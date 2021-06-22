@@ -1,3 +1,3 @@
-<%= link_to 'Изменить', edit_post_path(@post) %> |
-<%= link_to 'Удалить',  post_path(@post), data: {confirm: "Вы уверены, что хотите удалить статью #{@post.title}?"}, method: :delete %> |
+<%= link_to t('common.update'), edit_post_path(@post) %> |
+<%= link_to t('common.delete'),  post_path(@post), data: {confirm: "#{t('common.delete-confirm')} #{@post.title}?"}, method: :delete %> |
 <%= link_to 'К списку статей', posts_path %> 

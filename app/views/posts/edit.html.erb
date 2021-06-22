@@ -2,7 +2,7 @@
 	<div class="row">
 		<div class="col"></div>
 		<div class="col-8">
-			<h1 class="display-5 main">Редактирование статьи: <%= @post.title%></h1>
+			<h1 class="display-5 main"><%= t('common.article_edit')%><%= @post.title%></h1>
 		</div>
 		<div class="col"></div>
 	</div>
@@ -31,8 +31,8 @@
 				</div>
 				<br>
 				<div class = "form-group">
-					<%= f.submit 'Подтвердить', class: 'btn btn-outline-success' %>
-					<%= link_to 'Назад', :back, class: 'btn btn-outline-secondary'  %>
+					<%= f.submit t('common.apply'), class: 'btn btn-outline-success' %>
+					<%= link_to t('common.back'), :back, class: 'btn btn-outline-secondary'  %>
 				</div>
 			<% end %>		
 		</div>
