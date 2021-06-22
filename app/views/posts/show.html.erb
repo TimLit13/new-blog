@@ -21,7 +21,7 @@
 			 	 	<%= t('common.article_body') %>
 			 	 </dt>
 			 	 <dd class="col-sm-9">
-			    	<p><%= @post.body %></p>
+			    	<p><%= @post.body.html_safe %></p>
 			  	</dd>
 
 
