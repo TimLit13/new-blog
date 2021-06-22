@@ -29,7 +29,13 @@
 
 				<div class = "form-group">
 					<%= f.label :body %>
-					<%= f.text_area :body, class: 'form-control' %>
+					<%= f.trix_editor :body, class: 'editor' %>
+				</div>
+				<br>
+
+				<div class = "form-group">
+					<%= f.label :all_tags %>
+					<%= f.text_field :all_tags, class: 'form-control' %>
 				</div>
 				<br>
 
