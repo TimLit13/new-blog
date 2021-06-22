@@ -1,3 +1,5 @@
-<%= link_to t('common.update'), edit_post_path(@post) %> |
-<%= link_to t('common.delete'),  post_path(@post), data: {confirm: "#{t('common.delete-confirm')} #{@post.title}?"}, method: :delete %> |
-<%= link_to 'К списку статей', posts_path %> 
+<div class="btn-group" role="group" aria-label="Basic example">
+  <%= link_to t('common.update'), edit_post_path(@post), class: 'btn btn-secondary'%>
+  <%= link_to t('common.delete'),  post_path(@post), class: 'btn btn-secondary', data: {confirm: "#{t('common.delete-confirm')} #{@post.title}?"}, method: :delete %>
+  <%= link_to 'К списку статей', posts_path, class: 'btn btn-secondary' %>
+</div>
