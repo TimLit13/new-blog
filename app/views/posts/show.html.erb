@@ -1,0 +1,34 @@
+<div class="container">	
+	<div class="row">
+		<div class="col-2"></div>
+		<div class="col-8 article">
+			<dl class="row">
+				<dt class="col-sm-3">
+					<h3>Статья</h3>
+				</dt>
+			  	<dd class="col-sm-9">
+			  		<h3><%= @post.title %></h3>	
+			  	</dd>
+
+			 	<dt class="col-sm-3">
+			 		Краткое описание
+			 	</dt>
+			 	<dd class="col-sm-9">
+			    	<p><%= @post.summary %></p>
+			  	</dd>
+
+			 	 <dt class="col-sm-3">
+			 	 	Содержание
+			 	 </dt>
+			 	 <dd class="col-sm-9">
+			    	<p><%= @post.body %></p>
+			  	</dd>
+			</dl>
+			<div class= "text-center"> 
+				<%= render 'form_update_delete'%>
+			</div>
+		</div>
+		<div class="col-2"></div>
+	</div>
+</div>	
+

@@ -1,0 +1,41 @@
+<div class="container">
+	<div class="row">
+		<div class="col"></div>
+		<div class="col-8">
+			<h1 class="display-5 main">Редактирование статьи: <%= @post.title%></h1>
+		</div>
+		<div class="col"></div>
+	</div>
+</div>
+
+<%= render 'error_messages'%>
+
+<div class="container">
+	<div class="row">
+		<div class="col"></div>
+		<div class="col-8">
+			<%= form_for :post, url: post_path(@post), method: :put do |f| %>
+				<div class = "form-group">
+					<%= f.label :title%>
+					<%= f.text_field :title, class: 'form-control'%>
+				</div>
+				<br>
+				<div class = "form-group">
+					<%= f.label :summary %>
+					<%= f.text_area :summary, class: 'form-control'%>
+				</div>
+				<br>
+				<div class = "form-group">
+					<%= f.label :body %>
+					<%= f.text_area :body, class: 'form-control' %>
+				</div>
+				<br>
+				<div class = "form-group">
+					<%= f.submit 'Подтвердить', class: 'btn btn-outline-success' %>
+					<%= link_to 'Назад', :back, class: 'btn btn-outline-secondary'  %>
+				</div>
+			<% end %>		
+		</div>
+		<div class="col"></div>
+	</div>
+</div>

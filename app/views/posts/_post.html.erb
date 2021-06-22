@@ -1,0 +1,28 @@
+<!-- Цикл отсутствует, Rails автоматически делает цикл @posts.each do |post|-->
+<div class="container">	
+	<div class="row">
+		<div class="col-2"></div>
+		<div class="col-8">
+			<div class = "article">
+				<figure class="text-center">
+				  <blockquote class="blockquote">
+				    <p><%= link_to post.title, post_path(post) %></p>
+				  </blockquote>
+				  <figcaption class="blockquote-footer">
+				    <%= post.summary%>,
+				    <br>  
+				    <cite title="Source Title">created at <%= post.created_at.to_date.strftime("%d %B %Y")%></cite>
+				    <br>
+				    <cite title="Source Title">
+				  		<%= link_to 'Изменить', edit_post_path(post) %> |
+						<%= link_to 'Удалить',  post_path(post), method: :delete, data: {confirm: "Вы уверены, что хотите удалить статью #{post.title}?"} %>
+					</cite>
+				  </figcaption>
+				</figure>
+			</div>
+		</div>
+		<div class="col-2"></div>
+	</div>
+</div>	
+
+
