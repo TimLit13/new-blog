@@ -65,7 +65,8 @@ class PostsController < ApplicationController
       :title,
       :summary,
       :body,
-      :image
+      :image,
+      :all_tags
     )
   end
 end
