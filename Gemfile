@@ -20,6 +20,8 @@ gem 'rails-assets-tether', '>= 1.1.0'
 gem "coffee-script-source"
 gem 'carrierwave', '~> 2.0'
 gem "mini_magick"
+gem "trix"
+gem 'trix-rails', require: 'trix'
 # ===========================================
 
 gem 'bootsnap', '>= 1.4.4', require: false
