@@ -14,7 +14,7 @@
 				 		<%= t('common.article_category') %>
 				 	</dt>
 				 	<dd class="col-sm-9">
-				    	<p><%= @post.category.name %></p>
+				    	<p><%= link_to @post.category.name, @post.category, class: 'btn btn-outline-secondary btn-sm' %> </p>
 				  	</dd>
 				  <% end %>
 
