@@ -1,0 +1,18 @@
+<div class="container">
+	<div class="row">
+		<%= form_for :category, url: categories_path, html: {multipart: true} do |f| %>
+			<div class = "form-group">
+				<%= f.label t('categories.new.title') %>
+				<%= f.text_field :name, class: 'form-control'%>
+			</div>
+			<br>
+
+			<div class = "form-group">
+				<%= f.submit t('common.apply'), class: 'btn btn-outline-success'  %>
+				<%= link_to t('common.back'), :back, class: 'btn btn-outline-secondary'  %>
+			</div>
+		<% end %>
+	</div>
+</div>
+
+
