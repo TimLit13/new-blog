@@ -1,7 +1,6 @@
 <div class="container">	
 	<div class="row">
-		<div class="col-2"></div>
-		<div class="col-8 article">
+		<div class="article">
 			<dl class="row">
 				<dt class="col-sm-3">
 					<h3><%= t('common.article') %></h3>
@@ -38,20 +37,11 @@
 				<%= render 'form_update_delete'%>
 			</div>
 		</div>
-		<div class="col-2"></div>
 	</div>
 </div>	
 
 <div class="container">	
-	<div class="row">
-		<div class="col-2">
-		</div>
-		<div class="col-8 disqus">
-			<%= render 'disqus'%>
-		</div>
-		<div class="col-2">
-		</div>
-	</div>
+	<%= render 'disqus'%>
 </div>	
 
 
