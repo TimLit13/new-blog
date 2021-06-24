@@ -22,7 +22,7 @@ gem 'carrierwave', '~> 2.0'
 gem "mini_magick"
 gem "trix"
 gem 'trix-rails', require: 'trix'
-gem 'will_paginate', '~> 3.1.0'
+gem 'will_paginate-bootstrap4'
 # ===========================================
 
 gem 'bootsnap', '>= 1.4.4', require: false
