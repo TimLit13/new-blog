@@ -1,12 +1,12 @@
 <!-- Цикл отсутствует, Rails автоматически делает цикл @posts.each do |post|-->
 <div class="container">	
 	<div class="row">
-		<div class="col-2"></div>
-		<div class="col-8">
+		<div class="col-1"></div>
+		<div class="col-10">
 			<div class = "article">
 				<figure class="text-center">
 				  <blockquote class="blockquote">
-				    <p><%= link_to post.title, post_path(post) %></p>
+				    <p><%= link_to post.title, post_path(post), class: 'post-title' %></p>
 				  </blockquote>
 				  <figcaption class="blockquote-footer">
 				    <div><%= image_tag post.image.url(:thumb), class: 'img-thumbnail thumb' if post.image?%></div>
@@ -23,7 +23,7 @@
 				</figure>
 			</div>
 		</div>
-		<div class="col-2"></div>
+		<div class="col-1"></div>
 	</div>
 </div>	
 
