@@ -53,12 +53,14 @@
       </div>
 
       <div class="row">
-        <div class = "col-md-8">
+        <div class = "col-md-10">
           <%= yield %>
         </div>
-        <div class = "col-md-4">
+        <div class = "col-md-2">
           <% tag_cloud(Tag.counts, %w{tag1 tag2 tag3 tag4 tag5}) do |tag, css_class| %>
-            <%= link_to tag.name, tag_path(tag.name),  class: css_class %>
+            <span class="badge rounded-pill bg-secondary">
+              <%= link_to tag.name, tag_path(tag.name), class: css_class  %>
+            </span>
           <% end %>
         </div>
       </div>
