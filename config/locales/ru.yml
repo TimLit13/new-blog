@@ -18,6 +18,7 @@ ru:
     category_name: 'Название категории'
     category_number: '№'
     category_actions: 'Действия'
+    category_delete_confirm: 'Вы уверены, что хотите удалить категорию'
 
   posts:
     new:
@@ -27,6 +28,15 @@ ru:
       new:
         name: 'Новая категория'
         title: 'Наименование'
+      create:
+        success: 'Категория успешно создана'
+        fault: 'Категория не создана'
+      update:
+        success: 'Категория успешно обновлена'
+        fault: 'Категория не обновлена'
+      delete:
+        success: 'Категория успешно удалена'
+        fault: 'Категория не удалена'
 
   tags:
     show:
