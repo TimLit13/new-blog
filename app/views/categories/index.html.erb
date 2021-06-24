@@ -1,0 +1,17 @@
+<h1><%= t('common.categories_all') %></h1>
+
+<div class="buttons_pannel">
+	<%= link_to 'Новая категория', new_category_path, class: 'btn btn-success' %>
+</div>
+
+<div id="categories">
+	<table class="table">
+		<thead>
+			<tr>
+				<th><%= t('common.category_number') %></th>
+				<th><%= t('common.category_name') %></th>
+				<th><%= t('common.category_actions') %></th>
+			</tr>
+		</thead>
+	</table>
+</div>
