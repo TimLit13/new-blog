@@ -9,6 +9,8 @@ ru:
         body: 'Текст статьи'
         image: 'Изображение'
         all_tags: 'Тэги'
+      category:
+        parent_id: 'Раздел'
     errors:
       messages:
         blank: 'не может быть пустым'
