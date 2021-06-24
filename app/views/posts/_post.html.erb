@@ -14,6 +14,16 @@
 				    <br>  
 				    <cite title="Source Title"><%= t('common.created_at') %> <%= post.created_at.to_date.strftime("%d %B %Y")%></cite>
 				    <br>
+				    <% if post.category.present? %>
+				   		<div>
+				    		<p><%= t('common.post_category')%> 
+				    			<span>
+				    				<%= link_to "#{post.category.name}", post.category, class: 'btn btn-outline-secondary btn-sm' %>
+				    			</span>
+				    		</p>
+				    	</div>
+				    <% end %>
+
 				    <div class = "footer-summary">
 						<span>
 							<%= raw post.tags.map(&:name).map{ |t| link_to t, tag_path(t), class: 'badge bg-secondary tags-under-articles'}.join(' ')%>

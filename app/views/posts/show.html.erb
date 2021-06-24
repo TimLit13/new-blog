@@ -9,6 +9,15 @@
 			  		<h3><%= @post.title %></h3>	
 			  	</dd>
 
+			  	<% if @post.category_id.present? %>
+				  	<dt class="col-sm-3">
+				 		<%= t('common.article_category') %>
+				 	</dt>
+				 	<dd class="col-sm-9">
+				    	<p><%= @post.category.name %></p>
+				  	</dd>
+				  <% end %>
+
 			 	<dt class="col-sm-3">
 			 		<%= t('common.article_summary') %>
 			 	</dt>
