@@ -22,9 +22,9 @@ class CategoriesController < ApplicationController
 
     if @category.valid?
       @category.save
-      redirect_to categories_path, success: 'Категория успешно создана'
+      redirect_to categories_path, success: "#{t('categories.create.success')}"
     else
-      flash.now[:danger] = 'Категория не создана'
+      flash.now[:danger] = "#{t('categories.create.fault')}"
       render :new
     end
   end
@@ -35,9 +35,9 @@ class CategoriesController < ApplicationController
 
   def update
     if @category.update(category_params)
-      redirect_to categories_path, success: 'Категория успешно обновлена'
+      redirect_to categories_path, success: "#{t('categories.update.success')}"
     else
-      flash.now[:danger] = 'Категория не обновлена'
+      flash.now[:danger] = "#{t('categories.update.fault')}"
       render :edit
     end
 
@@ -45,9 +45,9 @@ class CategoriesController < ApplicationController
 #=======================================================================================
   def destroy
     if @category.destroy
-      redirect_to categories_path, info: 'Категория успешно удалена'
+      redirect_to categories_path, info: "#{t('categories.delete.success')}"
     else 
-      render :edit, danger: 'Категория не удалена'
+      render :edit, danger: "#{t('categories.delete.fault')}"
     end
   end
 #=======================================================================================
