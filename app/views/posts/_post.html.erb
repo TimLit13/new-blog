@@ -16,7 +16,7 @@
 				    <br>
 				    <div class = "footer-summary">
 						<span>
-							<%= raw post.tags.map(&:name).map{ |t| link_to t, tag_path(t), class: 'badge bg-secondary'}.join(' ')%>
+							<%= raw post.tags.map(&:name).map{ |t| link_to t, tag_path(t), class: 'badge bg-secondary tags-under-articles'}.join(' ')%>
 						</span>
 					</div>
 				  </figcaption>
