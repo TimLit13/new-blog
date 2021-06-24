@@ -9,7 +9,11 @@
 
 			<div class = "form-group">
 				<%= f.label :parent_id %>
-				<%= f.collection_select :parent_id, Category.where("id != #{@category.id}").order(name: :asc), :id, :name, { include_blank: true }, class: 'form-control' %>
+				<% if @category.id == nil %>
+					<%= f.collection_select :parent_id, Category.order(name: :asc), :id, :name, { include_blank: true }, class: 'form-control' %>
+				<% else %>
+					<%= f.collection_select :parent_id, Category.where.not(id: @category.id).order(name: :asc), :id, :name, { include_blank: true }, class: 'form-control' %>
+				<% end %>
 			</div>
 			<br>
 

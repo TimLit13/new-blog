@@ -22,6 +22,7 @@ ru:
     category_number: '№'
     category_actions: 'Действия'
     category_delete_confirm: 'Вы уверены, что хотите удалить категорию'
+    parent_id: 'Раздел'
     post_category: 'В категории: '
 
   posts:
