@@ -69,7 +69,8 @@ class PostsController < ApplicationController
       :summary,
       :body,
       :image,
-      :all_tags
+      :all_tags,
+      :id
     )
   end
 end

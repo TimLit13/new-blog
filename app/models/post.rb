@@ -1,8 +1,8 @@
 class Post < ApplicationRecord
   mount_uploader :image, ImageUploader
 
-  has_many :taggings
-  has_many :tags, through: :taggings
+  has_many :taggings, dependent: :destroy
+  has_many :tags, through: :taggings, dependent: :destroy
   
   validates :title, :summary, :body, :image, presence: true
   validates :title, :summary, :body, length: { minimum: 3} 
