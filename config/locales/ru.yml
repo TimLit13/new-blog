@@ -13,13 +13,26 @@ ru:
     article_summary: 'Краткое содержание'
     article_body: 'Текс статьи'
     article_img: 'Изображение'
+    category_edit: 'Редактирование категории'
+    categories_all: 'Все категории'
+    category_name: 'Название категории'
+    category_number: '№'
+    category_actions: 'Действия'
+
   posts:
     new:
       title: 'Новая статья'
+
+  categories:
+      new:
+        name: 'Новая категория'
+        title: 'Наименование'
+
   tags:
     show:
       no_articles: 'Статей нет'
       all_articles_with_tag: 'Все статьи с тэгом: '
+  
   will_paginate:
     previous_label: 'Предыдущая страница'
     next_label: 'Следующая страница'
