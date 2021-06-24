@@ -1,5 +1,6 @@
 ru:
   common:
+    popular_tags: 'Популярные тэги:'
     errors: 'При заполнении возникли ошибки:'
     back: 'Назад'
     apply: 'Подтвердить'
@@ -10,6 +11,8 @@ ru:
     article_edit: 'Редактирование статьи: '
     articles: 'Статьи'
     article: 'Статья'
+    article_category: 'Категория'
+    article_tags: 'Тэги'
     article_summary: 'Краткое содержание'
     article_body: 'Текс статьи'
     article_img: 'Изображение'
@@ -19,6 +22,7 @@ ru:
     category_number: '№'
     category_actions: 'Действия'
     category_delete_confirm: 'Вы уверены, что хотите удалить категорию'
+    post_category: 'В категории: '
 
   posts:
     new:
