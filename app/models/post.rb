@@ -3,6 +3,8 @@ class Post < ApplicationRecord
 
   has_many :taggings, dependent: :destroy
   has_many :tags, through: :taggings, dependent: :destroy
+
+  belongs_to :category
   
   validates :title, :summary, :body, :image, presence: true
   validates :title, :summary, :body, length: { minimum: 3} 
