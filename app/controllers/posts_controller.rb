@@ -70,7 +70,8 @@ class PostsController < ApplicationController
       :body,
       :image,
       :all_tags,
-      :id
+      :id,
+      :category_id
     )
   end
 end
