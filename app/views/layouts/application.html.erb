@@ -63,10 +63,12 @@
             </h3>  
           </div>
           <div>
-            <% tag_cloud(Tag.counts, %w{tag1 tag2 tag3 tag4 tag5}) do |tag, css_class| %>
-              <span class="badge rounded-pill bg-secondary">
-                <%= link_to tag.name, tag_path(tag.name), class: css_class  %>
-              </span>
+            <% if Tag.any? %>
+              <% tag_cloud(Tag.counts, %w{tag1 tag2 tag3 tag4 tag5}) do |tag, css_class| %>
+                <span class="badge rounded-pill bg-secondary">
+                  <%= link_to tag.name, tag_path(tag.name), class: css_class  %>
+                </span>
+              <% end %>
             <% end %>
           </div>
           <div>
