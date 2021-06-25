@@ -18,6 +18,7 @@ ru:
     article_img: 'Изображение'
     category_edit: 'Редактирование категории'
     categories_all: 'Все категории'
+    categories: 'Категории'
     category_name: 'Название категории'
     category_number: '№'
     category_actions: 'Действия'
