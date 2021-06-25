@@ -17,24 +17,24 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="<%= posts_path %>">Статьи</a>
+                <a class="nav-link <%= 'active' if current_page?(root_path) || current_page?(posts_path) %>" aria-current="page" href="<%= root_path %>">Все статьи</a>
               </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="#">Информация</a>
-              </li>
+
+              <% Category.order(:name).roots.each do |category| %>
+                <li class="nav-item <%= 'active' if current_page?(category_path(category))%>">
+                <%= link_to category.name, category, class: 'nav-link'%>
+                </li>
+              <% end %>
+
 
               <li class="nav-item">
                 <a class="nav-link" href="#">Контакты</a>
               </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#">Условия</a>
-              </li>
             </ul>
 
             <form class="d-flex">
-              <%= link_to 'Создать статью', new_post_path, class: "btn btn-outline-success pull-xs-right" %>
+              <%= link_to 'Создать статью', new_post_path, class: "btn btn-sm btn-outline-success pull-xs-right" %>
             </form>
           </div>
         </div>
