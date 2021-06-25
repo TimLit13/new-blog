@@ -9,7 +9,7 @@ class CategoriesController < ApplicationController
   end
  
   def show
-
+    @posts = Post.where(category_id: [@category.subtree_ids]).paginate(page: params[:page], per_page: 2).order(updated_at: :desc)
   end
 #=======================================================================================
   def new
