@@ -1,4 +1,4 @@
-<ul class="nav flex-column nav-pills nested-nav">
+<ul class="nav flex-column nav-pills nested-nav" style="margin-left: 1em;">
 	<% categories.each do |category, children| %>
 		<li class="nav-item">
 			<%= link_to category.name, category, class: "nav-link #{'active' if current_page?(category_path(category))}" %>
