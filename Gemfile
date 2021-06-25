@@ -24,6 +24,8 @@ gem "trix"
 gem 'trix-rails', require: 'trix'
 gem 'will_paginate-bootstrap4'
 gem 'ancestry'
+
+gem 'pg'
 # ===========================================
 
 gem 'bootsnap', '>= 1.4.4', require: false

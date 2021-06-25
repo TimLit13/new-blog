@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2021_06_24_181021) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "categories", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
@@ -38,8 +41,8 @@ ActiveRecord::Schema.define(version: 2021_06_24_181021) do
   end
 
   create_table "taggings", force: :cascade do |t|
-    t.integer "post_id", null: false
-    t.integer "tag_id", null: false
+    t.bigint "post_id", null: false
+    t.bigint "tag_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["post_id"], name: "index_taggings_on_post_id"
