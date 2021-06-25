@@ -1,9 +1,9 @@
 <div class="submenu">
-	<h2><%= t('common.categories')%></h2>
+	<h2><%= link_to t('common.categories'), categories_path, class: 'categories-title' %></h2>
 	<ul class="nav flex-column nav-pill">
 		<% Category.roots.each do |category| %>
 			<li class="nav-item">
-				<%= link_to category.name, category, class: "nav-link #{'active' if current_page?(category_path(category))}" %>
+				<%= link_to category.name, category, class: "nav-link #{'active' if current_page?(category_path(category)) || @post.present? && @post.category == category }" %>
 				<%= render 'shared/submenu_categories', categories: category.root.descendants.arrange %>
 			</li>
 		<% end %>
