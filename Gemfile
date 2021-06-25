@@ -26,6 +26,8 @@ gem 'will_paginate-bootstrap4'
 gem 'ancestry'
 
 gem 'pg'
+
+gem 'devise'
 # ===========================================
 
 gem 'bootsnap', '>= 1.4.4', require: false
