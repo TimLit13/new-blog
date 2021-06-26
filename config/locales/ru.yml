@@ -9,6 +9,7 @@ ru:
     delete-confirm: 'Вы уверены, что хотите удалить статью'
     created_at: 'создана'
     article_edit: 'Редактирование статьи: '
+    articles_all: 'Все статьи'
     articles: 'Статьи'
     article: 'Статья'
     article_category: 'Категория'
@@ -16,6 +17,8 @@ ru:
     article_summary: 'Краткое содержание'
     article_body: 'Текс статьи'
     article_img: 'Изображение'
+    article_create: 'Создать статью'
+    article_list: 'К списку статей'
     category_edit: 'Редактирование категории'
     categories_all: 'Все категории'
     categories: 'Категории'
@@ -25,6 +28,11 @@ ru:
     category_delete_confirm: 'Вы уверены, что хотите удалить категорию'
     parent_id: 'Раздел'
     post_category: 'В категории: '
+    contacts: 'Контакты'
+    registration:
+      in: 'Вход'
+      out: 'Выход'
+      reg: 'Регистрация'
 
   posts:
     new:
