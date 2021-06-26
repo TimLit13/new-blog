@@ -282,6 +282,7 @@ DEPENDENCIES
   sass-rails (>= 6)
   selenium-webdriver
   spring
+  sprockets-rails
   sqlite3 (~> 1.4)
   trix
   trix-rails

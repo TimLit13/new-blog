@@ -15,6 +15,7 @@ gem 'jbuilder', '~> 2.7'
 
 # ===========================================
 gem 'bootstrap', '~> 5.0.1'
+gem 'sprockets-rails'
 gem 'jquery-rails'
 gem 'rails-assets-tether', '>= 1.1.0'
 gem "coffee-script-source"

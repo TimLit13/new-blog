@@ -13,5 +13,7 @@ Turbolinks.start()
 ActiveStorage.start()
 
 require("trix")
-require("jquery")
-require("pictures.coffee")
+
+//= require jquery3
+//= require popper
+//= require bootstrap-sprockets

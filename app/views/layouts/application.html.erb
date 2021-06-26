@@ -70,10 +70,11 @@
       <div class="row">
         <div class = "col-md-12">
           <% flash.each do |name, message|%>
-            <div class = "alert alert-<%=bootstrap_class_for(name) %>" >
-              <button class="close" data-dismiss="alert">&times;</button>
+            <div class = "alert <%= bootstrap_class_for(name) %> alert-dismissible fade show" >
+              <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close" aria-hidden="true" onclick="var elem = document.querySelector('#alert'); elem.style.display = 'none';"></button>
               <%= message %>
             </div>
+
           <% end %>          
         </div>
       </div>
@@ -105,3 +106,6 @@
     </div>
   </body>
 </html>
+
+
+
