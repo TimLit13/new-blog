@@ -1,5 +1,5 @@
-class Admin::CategoriesController < ApplicationController
-  before_action :authenticate_user!
+class Admin::CategoriesController < Admin::AdminController
+
   # , except: [:show]
   before_action :set_category, only: %i[edit update destroy]
   before_action :set_categories, only: %i[index]

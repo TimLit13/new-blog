@@ -1,5 +1,4 @@
-class Admin::PostsController < ApplicationController
-  before_action :authenticate_user!
+class Admin::PostsController < Admin::AdminController
   # , except: [:index]
   before_action :set_post, only: %i[edit update destroy]
   # before_action :set_posts, only: %i[index]
