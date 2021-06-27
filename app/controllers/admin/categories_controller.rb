@@ -1,4 +1,4 @@
-class CategoriesController < ApplicationController
+class Admin::CategoriesController < ApplicationController
   before_action :authenticate_user!
   # , except: [:show]
   before_action :set_category, only: %i[edit update destroy]
@@ -23,9 +23,9 @@ class CategoriesController < ApplicationController
 
     if @category.valid?
       @category.save
-      redirect_to categories_path, success: "#{t('categories.create.success')}"
+      redirect_to admin_categories_path, success: "#{t('admin.categories.create.success')}"
     else
-      flash.now[:danger] = "#{t('categories.create.fault')}"
+      flash.now[:danger] = "#{t('admin.categories.create.fault')}"
       render :new
     end
   end
@@ -36,9 +36,9 @@ class CategoriesController < ApplicationController
 
   def update
     if @category.update(category_params)
-      redirect_to categories_path, success: "#{t('categories.update.success')}"
+      redirect_to admin_categories_path, success: "#{t('admin.categories.update.success')}"
     else
-      flash.now[:danger] = "#{t('categories.update.fault')}"
+      flash.now[:danger] = "#{t('admin.categories.update.fault')}"
       render :edit
     end
 
@@ -46,9 +46,9 @@ class CategoriesController < ApplicationController
 #=======================================================================================
   def destroy
     if @category.destroy
-      redirect_to categories_path, info: "#{t('categories.delete.success')}"
+      redirect_to admin_categories_path, info: "#{t('admin.categories.delete.success')}"
     else 
-      render :edit, danger: "#{t('categories.delete.fault')}"
+      render :edit, danger: "#{t('admin.categories.delete.fault')}"
     end
   end
 #=======================================================================================

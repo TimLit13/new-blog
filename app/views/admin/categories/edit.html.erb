@@ -10,11 +10,11 @@
 
 <div class="container">
 	<div class="row">
-		<%= form_for :category, url: category_path(@category),  method: :put, html: {multipart: true} do |f| %>
+		<%= form_for [:admin, @category], url: admin_category_path(@category),  method: :put, html: {multipart: true} do |f| %>
 
 			
 			<div class = "form-group">
-				<%= f.label t('categories.new.title') %>
+				<%= f.label t('admin.categories.new.title') %>
 				<%= f.text_field :name, class: 'form-control'%>
 			</div>
 			<br>
