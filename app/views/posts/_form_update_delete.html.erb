@@ -1,7 +1,0 @@
-<div class="btn-group" role="group" aria-label="Basic example">
-  <% if user_signed_in? %>
-    <%= link_to t('common.update'), edit_post_path(@post), class: 'btn btn-secondary'%>
-    <%= link_to t('common.delete'),  post_path(@post), class: 'btn btn-secondary',  local: false, data: {confirm: "#{t('common.delete-confirm')} #{@post.title}?"}, method: :delete %>
-  <% end %>
-  <%= link_to t('common.article_list'), posts_path, class: 'btn btn-secondary' %>
-</div>

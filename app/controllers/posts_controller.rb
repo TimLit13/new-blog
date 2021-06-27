@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
-  before_action :authenticate_user!, except: [:index]
-  before_action :set_post, only: %i[show edit update destroy]
+  # before_action :authenticate_user!, except: [:index]
+  before_action :set_post, only: %i[show]
   before_action :set_posts, only: %i[index]
 
 #=======================================================================================
@@ -11,46 +11,46 @@ class PostsController < ApplicationController
   def show
 
   end
-#=======================================================================================
-  def new
-    @post = Post.new
+# #=======================================================================================
+#   def new
+#     @post = Post.new
 
-  end
+#   end
 
-  def create
-    @post = Post.new (post_params)
+#   def create
+#     @post = Post.new (post_params)
 
-    if @post.valid?
-      @post.save
-      redirect_to @post, success: "#{t('posts.create.success')}"
-    else
-      flash.now[:danger] = "#{t('posts.create.fault')}"
-      render :new
-    end
-  end
-#=======================================================================================
-  def edit
+#     if @post.valid?
+#       @post.save
+#       redirect_to @post, success: "#{t('posts.create.success')}"
+#     else
+#       flash.now[:danger] = "#{t('posts.create.fault')}"
+#       render :new
+#     end
+#   end
+# #=======================================================================================
+#   def edit
 
-  end
+#   end
 
-  def update
-    if @post.update(post_params)
-      redirect_to posts_path, success: "#{t('posts.update.success')}"
-    else
-      flash.now[:danger] = "#{t('posts.update.fault')}"
-      render :edit
-    end
+#   def update
+#     if @post.update(post_params)
+#       redirect_to posts_path, success: "#{t('posts.update.success')}"
+#     else
+#       flash.now[:danger] = "#{t('posts.update.fault')}"
+#       render :edit
+#     end
 
-  end
-#=======================================================================================
-  def destroy
-    if @post.destroy
-      redirect_to posts_path, info: "#{t('posts.delete.success')}"
-    else 
-      render :edit, danger: "#{t('posts.delete.fault')}"
-    end
-  end
-#=======================================================================================
+#   end
+# #=======================================================================================
+#   def destroy
+#     if @post.destroy
+#       redirect_to posts_path, info: "#{t('posts.delete.success')}"
+#     else 
+#       render :edit, danger: "#{t('posts.delete.fault')}"
+#     end
+#   end
+# #=======================================================================================
 
   private
 

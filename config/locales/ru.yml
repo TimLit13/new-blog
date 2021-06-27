@@ -34,18 +34,6 @@ ru:
       out: 'Выход'
       reg: 'Регистрация'
 
-  posts:
-    new:
-      title: 'Новая статья'
-    create:
-      success: 'Статья успешно создана'
-      fault: 'Статья не создана'
-    update:
-      success: 'Статья успешно обновлена'
-      fault: 'Статья не обновлена'
-    delete:
-      success: 'Статья успешно удалена'
-      fault: 'Статья не удалена'
   admin:
     categories:
       new:
@@ -60,6 +48,19 @@ ru:
       delete:
         success: 'Категория успешно удалена'
         fault: 'Категория не удалена'
+
+    posts:
+      new:
+        title: 'Новая статья'
+      create:
+        success: 'Статья успешно создана'
+        fault: 'Статья не создана'
+      update:
+        success: 'Статья успешно обновлена'
+        fault: 'Статья не обновлена'
+      delete:
+        success: 'Статья успешно удалена'
+        fault: 'Статья не удалена'
 
   tags:
     show:
