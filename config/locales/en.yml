@@ -1,36 +1,95 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at https://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
-
   common:
-    to_rus: 'rus'
+    popular_tags: 'Popular tags:'
+    errors: 'There are some mistakes'
+    back: 'Back'
+    apply: 'Apply'
+    update: 'Update'
+    delete: 'Delete'
+    delete-confirm: 'Are you shure for delete'
+    created_at: 'created at'
+    article_edit: 'Edit article: '
+    articles_all: 'All articles'
+    articles: 'Articles'
+    article: 'Article'
+    article_category: 'Categories'
+    article_tags: 'Tags'
+    article_summary: 'Summary'
+    article_body: 'Article body'
+    article_img: 'Image'
+    article_create: 'Create article'
+    article_list: 'To articles list'
+    category_edit: 'Edit category'
+    categories_all: 'All categories'
+    categories: 'Categories'
+    category_name: 'Category title'
+    category_number: '#'
+    category_actions: 'Actions'
+    category_delete_confirm: 'Are you shure for delete category'
+    parent_id: 'Section'
+    post_category: 'In section: '
+    contacts: 'Contacts'
+    registration:
+      in: 'Log in'
+      out: 'Log out'
+      reg: 'Sign up'
+    to_rus: 'рус'
+
+  admin:
+    categories:
+      new:
+        name: 'New category'
+        title: 'Title'
+      create:
+        success: 'Category successfully created'
+        fault: "Category wasn't create"
+      update:
+        success: 'Category successfully updated'
+        fault: "Category wasn't update"
+      delete:
+        success: 'Category successfully deleted'
+        fault: "Category wasn't delete"
+    no_access_rights: 'You have no access rights for this page'
+   
+    posts:
+      new:
+        title: 'New article'
+      create:
+        success: "Article successfully created"
+        fault: "Article wasn't create"
+      update:
+        success: "Article successfully updated"
+        fault: "Article wasn't update"
+      delete:
+        success: "Article successfully deleted"
+        fault: "Article wasn't delete"
+
+  tags:
+    show:
+      no_articles: 'No articles'
+      all_articles_with_tag: 'All articles with tag: '
+  
+  will_paginate:
+    previous_label: 'Previous page'
+    next_label: 'next page'
+
+  devise:
+    registrations:
+      sign_up: 'Sign up'
+      email: 'Email'
+      password: 'Password'
+      password_confirmation: 'Confirm password'
+
+    sessions:
+      log_in: 'Log in'
+      email: 'Email'
+      password: 'Password'
+      remember_me: 'Remember me'
+
+    shared:
+      log_in: 'Log in'
+      sign_up: 'Sign up'
+      forgot_password: 'Forgot your password?'
+      receive_confirmation_instructions: "Didn't recieve confirmation instructions?"
+      receive_unlock_instructions: "Didn't recieve unlock instructions?"
+      sign_in_with: 'Log in with'

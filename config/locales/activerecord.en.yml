@@ -1,0 +1,18 @@
+en:
+  activerecord:
+    models:
+      post: 'Article'
+    attributes:
+      post:
+        title: 'Title '
+        summary: 'Summary'
+        body: 'Article body'
+        image: 'Image'
+        all_tags: 'Tags'
+      category:
+        parent_id: 'Section'
+    errors:
+      messages:
+        blank: "Can't be blank"
+        too_short: "Can't be too short"
+        required: "Must be present"

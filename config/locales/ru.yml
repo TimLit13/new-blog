@@ -33,8 +33,6 @@ ru:
       in: 'Вход'
       out: 'Выход'
       reg: 'Регистрация'
-    to_rus: 'рус'
-    to_en: 'en'
 
   admin:
     categories:
@@ -50,8 +48,9 @@ ru:
       delete:
         success: 'Категория успешно удалена'
         fault: 'Категория не удалена'
-    no_access_rights: 'У Вас нет прав доступа к данной странице'
 
+    no_access_rights: 'У вас нет прав доступа к данной странице'
+    
     posts:
       new:
         title: 'Новая статья'
