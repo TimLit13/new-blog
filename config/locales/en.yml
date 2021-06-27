@@ -31,3 +31,6 @@
 
 en:
   hello: "Hello world"
+
+  common:
+    to_rus: 'rus'

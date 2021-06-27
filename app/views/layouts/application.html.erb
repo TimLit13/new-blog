@@ -50,6 +50,21 @@
                   <%= link_to t('common.registration.reg'), new_user_registration_path, class: 'nav-link'%>
                 </li>
               <% end %>
+
+<!--  -->
+              
+
+                <li class="nav-item<%=" active" %>">
+                  <% if I18n.locale == :en %>
+                    <%= link_to t('common.to_rus'), { locale: :ru }, class: "nav-link" %>
+                  <% elsif I18n.locale == :ru %>
+                    <%= link_to t('common.to_en'), { locale: :en }, class: "nav-link" %>
+                  <% end %>
+                </li>
+<!--  -->
+
+
+
             </ul>
 <!--  -->
 <!--  -->

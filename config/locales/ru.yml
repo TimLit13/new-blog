@@ -33,6 +33,8 @@ ru:
       in: 'Вход'
       out: 'Выход'
       reg: 'Регистрация'
+    to_rus: 'рус'
+    to_en: 'en'
 
   admin:
     categories:
