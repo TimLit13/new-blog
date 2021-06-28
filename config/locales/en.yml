@@ -29,6 +29,7 @@ en:
     parent_id: 'Section'
     post_category: 'In section: '
     contacts: 'Contacts'
+    pdf: 'Download PDF'
     registration:
       in: 'Log in'
       out: 'Log out'

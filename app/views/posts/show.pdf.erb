@@ -1,0 +1,42 @@
+<div class="container">	
+	<div class="row">
+		<div class="article">
+			<dl class="row">
+				<dt class="col-sm-3 title">
+					<%= t('common.article') %>
+				</dt>
+			  	<dd class="col-sm-9">
+			  		<h3><%= @post.title %></h3>	
+			  	</dd>
+			  	<br>
+			  	<hr>
+			 	<dt class="col-sm-3">
+			 		<%= t('common.article_summary') %>
+			 	</dt>
+			 	<dd class="col-sm-9">
+			    	<p><%= @post.summary %></p>
+			  	</dd>
+				<br>
+			  	<hr>
+			 	 <dt class="col-sm-3">
+			 	 	<%= t('common.article_body') %>
+			 	 </dt>
+			 	 <dd class="col-sm-9">
+			    	<p><%= @post.body.html_safe %></p>
+			  	</dd>
+
+				<br>
+			  	<hr>
+			  
+		    	<% if @post.image? %>
+		    		<dt class="col-sm-3">
+		 	 			<%= t('common.article_img') %>
+		 	 		</dt>
+		 	 		<dd class="col-sm-9">
+		    			<%= wicked_pdf_image_tag  "#{request.base_url}#{@post.image.url(:pdf)}" %>
+		  			</dd>
+		  		<% end %>
+			</dl>
+		</div>
+	</div>
+</div>	

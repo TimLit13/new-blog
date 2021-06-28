@@ -29,6 +29,7 @@ ru:
     parent_id: 'Раздел'
     post_category: 'В категории: '
     contacts: 'Контакты'
+    pdf: 'Скачать PDF'
     registration:
       in: 'Вход'
       out: 'Выход'
