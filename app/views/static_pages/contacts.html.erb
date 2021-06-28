@@ -8,12 +8,38 @@
 	</div>
 </div>
 
-<div class="container">
-	<div class="row">
-		<div class="col"></div>
-		<div class="col-8">
-			
-		</div>
-		<div class="col"></div>
-	</div>
-</div>
+<div class="container">	
+<table class="table">
+   <tbody>
+   	<br>
+   	<hr>
+    <tr>
+      <td colspan="1"></td>
+      <td colspan="3" class="text-left"><%= t('static_pages.contacts.email') %></td>
+      <td colspan="6" class="text-left">
+      <%= link_to 'mail@example.com', 'mailto:mail@example.com', class: "btn btn-sm btn-outline-secondary" %></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="1"></td>
+      <td colspan="3" class="text-left"><%= t('static_pages.contacts.phone') %></td>
+      <td colspan="6" class="text-left">+123456789</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="1"></td>
+      <td colspan="3" class="text-left"><%= t('static_pages.contacts.github') %></td>
+      <td colspan="6" class="text-left">
+      	<%= link_to t('static_pages.contacts.github_link'), 'https://github.com/TimLit13/', class: "btn btn-sm btn-outline-secondary" %>
+      </td>
+      <td colspan="2"></td>
+    </tr>
+  </tbody>
+</table>
+</div>	
+
+
+
+
+
+

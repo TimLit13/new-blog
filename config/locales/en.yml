@@ -99,5 +99,11 @@ en:
   static_pages:
     terms:
       terms: 'Terms of using this app'
+      par1: 'This site is an Internet resource and is a collection of information and computer programs contained in an information system that ensures the availability of such information on the Internet'
+      license: 'MIT license'
     contacts:
       contacts: 'Contact information'
+      phone: 'Phone'
+      email: 'Email'
+      github: 'Github account'
+      github_link: 'Github'
