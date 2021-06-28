@@ -27,9 +27,12 @@
                 </li>
               <% end %>
 
+              <li class="nav-item" <%= 'active' if current_page?(terms_path) %>>
+                <%= link_to t('common.terms'), terms_path, class: 'nav-link' %>
+              </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="#"><%= t('common.contacts') %></a>
+              <li class="nav-item" <%= 'active' if current_page?(contacts_path) %>>
+                <%= link_to t('common.contacts'), contacts_path, class: 'nav-link' %>
               </li>
             </ul>
 

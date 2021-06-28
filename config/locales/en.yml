@@ -30,6 +30,7 @@ en:
     post_category: 'In section: '
     contacts: 'Contacts'
     pdf: 'Download PDF'
+    terms: 'Terms'
     registration:
       in: 'Log in'
       out: 'Log out'
@@ -94,3 +95,9 @@ en:
       receive_confirmation_instructions: "Didn't recieve confirmation instructions?"
       receive_unlock_instructions: "Didn't recieve unlock instructions?"
       sign_in_with: 'Log in with'
+
+  static_pages:
+    terms:
+      terms: 'Terms of using this app'
+    contacts:
+      contacts: 'Contact information'
