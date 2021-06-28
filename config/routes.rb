@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'static_pages/terms'
+  get 'static_pages/contacts'
   # scope "(:locale)", locale: /ru|en/ do
   scope "(:locale)", locale: /#{I18n.available_locales.join("|")}/ do
     devise_for :users
