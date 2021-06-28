@@ -29,6 +29,10 @@ gem 'ancestry'
 gem 'pg'
 
 gem 'devise'
+
+# -----------------------------------------pdf
+gem 'wicked_pdf'
+gem 'wkhtmltopdf-binary'
 # ===========================================
 
 gem 'bootsnap', '>= 1.4.4', require: false
