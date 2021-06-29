@@ -32,7 +32,7 @@ gem 'devise'
 
 # -----------------------------------------pdf
 gem 'wicked_pdf'
-gem 'wkhtmltopdf-binary'
+
 # ===========================================
 
 gem 'bootsnap', '>= 1.4.4', require: false
@@ -47,6 +47,7 @@ group :development do
   gem 'rack-mini-profiler', '~> 2.0'
   gem 'listen', '~> 3.3'
   gem 'spring'
+  gem 'wkhtmltopdf-binary'
 end
 
 group :test do
@@ -54,5 +55,10 @@ group :test do
   gem 'selenium-webdriver'
   gem 'webdrivers'
 end
+
+group :production do
+  gem 'wkhtmltopdf-heroku'
+end
+
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
