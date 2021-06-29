@@ -1,0 +1,31 @@
+require 'rails_helper'
+
+feature 'Visitor sign in' do
+  scenario 'Allows visitor access to authentication page' do
+    visit '/users/sign_in'
+
+    expect(page).to have_content I18n.t('devise.sessions.log_in')  
+  end
+end
+
+feature 'Visitor sign up' do
+  scenario 'Allows visitor access to registration page' do
+    visit '/users/sign_up'
+
+    expect(page).to have_content I18n.t('devise.registrations.password_confirmation')  
+  end
+end
+
+feature 'Visitor change language' do
+  scenario 'Allows visitor change from en to рус' do
+    visit 'en/'
+
+    expect(page).to have_content I18n.t('common.to_rus')  
+  end
+
+    scenario 'Allows visitor change from рус to en' do
+    visit 'ru/'
+
+    expect(page).to have_content I18n.t('common.to_en')  
+  end
+end
