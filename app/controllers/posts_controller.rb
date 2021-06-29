@@ -12,15 +12,7 @@ class PostsController < ApplicationController
      respond_to do |format|
       format.html { render :show }
       format.pdf do
-        render pdf:                     "#{@post.title}",   # Excluding ".pdf" extension.
-        layout:                         'pdf.html.erb',
-        page_size:                      'A4',
-        orientation:                    'Portrait',
-        dpi:                            300,
-        zoom:                           1,
-        save_only:                      false,
-        image_quality:                  1,
-        print_media_type:               true
+        render pdf: "#{@post.title}"
       end
     end
   end
