@@ -1,24 +1,14 @@
-# README
+#App Blog
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This app works on
+ruby 2.7.0
+rails 6.1.4
 
-Things you may want to cover:
+Used gems see here
 
-* Ruby version
+For run this app use:
+>bundle exec rails db:migrate
+>bundle exec rails s
 
-* System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+see this app [here](https://new-blog-tim13.herokuapp.com/ "Click me!")
