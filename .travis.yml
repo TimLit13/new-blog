@@ -8,6 +8,3 @@ deploy:
    secure: 3ceee71c-13e3-4834-87c3-8b0b8ce38c11
  app: new-blog-tim13
  run: "rake db:migrate RAILS_ENV=test"
-
-test:
-  run: "rake db:migrate RAILS_ENV=test"
