@@ -19,4 +19,14 @@ bundle exec rails db:migrate
 bundle exec rails s
 ```
 
-see this app in production _[here](https://new-blog-tim13.herokuapp.com/ "Click me!")_
+see this app in production _[here](https://new-blog-tim13.herokuapp.com/ "This is app, click me!")_
+
+For adding post on heroku you need to be admin:
+Secret data here:
+```
+email: admin@admin.com
+password: admin@admin
+
+Please, do not post unnecessary information and do not delete posts.
+This is just a training project, nothing more.
+```
