@@ -26,7 +26,7 @@ Secret data here:
 ```
 email: admin@admin.com
 password: admin@admin
+```
 
 Please, do not post unnecessary information and do not delete posts.
 This is just a training project, nothing more.
-```
